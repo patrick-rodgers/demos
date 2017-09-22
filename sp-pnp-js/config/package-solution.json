@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "sp-pnp-js-demo-client-side-solution",
+    "id": "82080d9e-32a8-4e28-a4bb-c5adce7f8c75",
+    "version": "1.0.0.0",
+    "skipFeatureDeployment": false
+  },
+  "paths": {
+    "zippedPackage": "solution/sp-pnp-js-demo.sppkg"
+  }
+}

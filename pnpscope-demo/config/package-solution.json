@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "pnpscope-demo-client-side-solution",
+    "id": "fd19e916-411b-4c26-9286-832e22d12ae9",
+    "version": "1.0.0.0",
+    "skipFeatureDeployment": false
+  },
+  "paths": {
+    "zippedPackage": "solution/pnpscope-demo.sppkg"
+  }
+}

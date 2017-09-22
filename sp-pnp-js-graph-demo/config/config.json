@@ -1,0 +1,20 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "demo-show-groups-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/demoShowGroups/DemoShowGroupsWebPart.js",
+          "manifest": "./src/webparts/demoShowGroups/DemoShowGroupsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "sp-pnp-js": "https://cdnjs.cloudflare.com/ajax/libs/sp-pnp-js/3.0.1/pnp.min.js"
+  },
+  "localizedResources": {
+    "DemoShowGroupsWebPartStrings": "lib/webparts/demoShowGroups/loc/{locale}.js"
+  }
+}

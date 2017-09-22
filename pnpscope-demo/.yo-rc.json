@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.2.0",
+    "libraryName": "pnpscope-demo",
+    "libraryId": "fd19e916-411b-4c26-9286-832e22d12ae9",
+    "environment": "spo"
+  }
+}

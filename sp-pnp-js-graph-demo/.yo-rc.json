@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.2.0",
+    "libraryName": "sp-pnp-js-graph-demo",
+    "libraryId": "5f28dda9-345d-4e7b-b2a7-c1ecae06578a",
+    "environment": "spo"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "pnpscopedemo-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/pnpscopedemo/PnpscopedemoApplicationCustomizer.js",
+          "manifest": "./src/extensions/pnpscopedemo/PnpscopedemoApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PnpscopedemoApplicationCustomizerStrings": "lib/extensions/pnpscopedemo/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "sp-pnp-js-demo-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spPnpJsDemo/SpPnpJsDemoWebPart.js",
+          "manifest": "./src/webparts/spPnpJsDemo/SpPnpJsDemoWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "sp-pnp-js": "https://cdnjs.cloudflare.com/ajax/libs/sp-pnp-js/3.0.1/pnp.min.js"
+  },
+  "localizedResources": {
+    "SpPnpJsDemoWebPartStrings": "lib/webparts/spPnpJsDemo/loc/{locale}.js"
+  }
+}
