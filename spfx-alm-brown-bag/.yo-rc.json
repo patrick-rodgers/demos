@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.4.1",
+    "libraryName": "spfx-alm-brown-bag",
+    "libraryId": "56282abb-f789-44ef-8803-676a353f3299",
+    "environment": "spo"
+  }
+}
