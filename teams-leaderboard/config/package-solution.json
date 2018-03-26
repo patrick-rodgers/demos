@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "teams-leaderboard-client-side-solution",
+    "id": "2a27f505-54ee-4986-9abd-0e461e109b3c",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true
+  },
+  "paths": {
+    "zippedPackage": "solution/teams-leaderboard.sppkg"
+  }
+}

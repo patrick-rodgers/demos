@@ -1,0 +1,18 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "fast-track-teams-leaderboard-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/fastTrackTeamsLeaderboard/FastTrackTeamsLeaderboardWebPart.js",
+          "manifest": "./src/webparts/fastTrackTeamsLeaderboard/FastTrackTeamsLeaderboardWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "FastTrackTeamsLeaderboardWebPartStrings": "lib/webparts/fastTrackTeamsLeaderboard/loc/{locale}.js"
+  }
+}

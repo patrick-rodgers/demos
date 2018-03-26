@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.4.1",
+    "libraryName": "teams-leaderboard",
+    "libraryId": "2a27f505-54ee-4986-9abd-0e461e109b3c",
+    "environment": "spo"
+  }
+}
