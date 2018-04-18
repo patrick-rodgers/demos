@@ -9,10 +9,28 @@
           "manifest": "./src/extensions/demoTopBar/DemoTopBarApplicationCustomizer.manifest.json"
         }
       ]
+    },
+    "webpart-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/webpart/WebpartWebPart.js",
+          "manifest": "./src/webparts/webpart/WebpartWebPart.manifest.json"
+        }
+      ]
+    },
+    "no-framework-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/noFramework/NoFrameworkWebPart.js",
+          "manifest": "./src/webparts/noFramework/NoFrameworkWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "DemoTopBarApplicationCustomizerStrings": "lib/extensions/demoTopBar/loc/{locale}.js"
+    "DemoTopBarApplicationCustomizerStrings": "lib/extensions/demoTopBar/loc/{locale}.js",
+    "WebpartWebPartStrings": "lib/webparts/webpart/loc/{locale}.js",
+    "NoFrameworkWebPartStrings": "lib/webparts/noFramework/loc/{locale}.js"
   }
 }
