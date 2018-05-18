@@ -1,0 +1,18 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "pn-pjs-simple-header-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/pnPjsSimpleHeader/PnPjsSimpleHeaderApplicationCustomizer.js",
+          "manifest": "./src/extensions/pnPjsSimpleHeader/PnPjsSimpleHeaderApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PnPjsSimpleHeaderApplicationCustomizerStrings": "lib/extensions/pnPjsSimpleHeader/loc/{locale}.js"
+  }
+}

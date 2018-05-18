@@ -1,0 +1,8 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.4.1",
+    "libraryName": "pnpjs-spfx-1-4-1-appcustheader",
+    "libraryId": "5d6838f1-db79-4045-89ca-7772779f0054",
+    "environment": "spo"
+  }
+}

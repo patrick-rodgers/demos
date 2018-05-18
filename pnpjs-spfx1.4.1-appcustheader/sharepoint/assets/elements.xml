@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="PnPjsSimpleHeader"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="dd663812-eafe-40fd-8e66-8ea90a9496da"
+        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </CustomAction>
+</Elements>
