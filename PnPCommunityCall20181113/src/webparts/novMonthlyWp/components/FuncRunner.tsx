@@ -7,6 +7,7 @@ export interface FuncRunnerProps<T> {
 
 export interface FuncRunnerState<T> {
     result: T;
+    isErrorResult: boolean;
 }
 
 export class FuncRunner<T = any> extends React.Component<FuncRunnerProps<T>, FuncRunnerState<T>> {
@@ -17,11 +18,12 @@ export class FuncRunner<T = any> extends React.Component<FuncRunnerProps<T>, Fun
         // init state
         this.state = {
             result: null,
+            isErrorResult: false,
         };
     }
 
     public componentDidMount(): void {
-        this.props.action().then(result => this.setState({ result }));
+        this.props.action().then(result => this.setState({ result })).catch(e => this.setState({ result: e, isErrorResult: true }));
     }
 
     public render(): React.ReactElement<FuncRunnerProps<T>> {
@@ -35,8 +37,10 @@ export class FuncRunner<T = any> extends React.Component<FuncRunnerProps<T>, Fun
             );
         }
 
+        const color = this.state.isErrorResult ? "red" : "black";
+
         return (
-            <div style={{ height: 300, overflow: "auto", border: "1px, solid, #000000" }}>
+            <div style={{ height: 300, overflow: "auto", border: "1px, solid, #000000", color }}>
                 <h2>{this.props.title}</h2>
                 <div dangerouslySetInnerHTML={{ __html: JSON.stringify(this.state.result, null, 2) }}></div>
             </div>
