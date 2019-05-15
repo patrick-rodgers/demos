@@ -58,7 +58,7 @@ export function detailClientBind(client: SPHttpClient): (id: number) => Promise<
 export async function getPossumStatusList(client: SPHttpClient): Promise<IPossumStatus[]> {
 
     // now we need to get the status for each possum which we do like so:
-    const response = await client.get(`https://officedevpnp.sharepoint.com/sites/PossumPete/_api/web/lists/getByTitle('PossumStatus')/items?$select=Status,Details,Possum/ID,Possum/Title&$expand=Possum&$orderby=Created desc`, SPHttpClient.configurations.v1);
+    const response = await client.get(`https://officedevpnp.sharepoint.com/sites/PossumPete/_api/web/lists/getByTitle('PossumStatus')/items?$select=Status,Details,Modified,Possum/ID,Possum/Title&$expand=Possum&$orderby=Created desc`, SPHttpClient.configurations.v1);
 
     if (response.ok) {
         const raw: { value: any[] } = await response.clone().json();

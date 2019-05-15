@@ -15,7 +15,7 @@ export interface IPossumDashboardDetailState {
 const HistoryRow = ({ history }: { history: IPossumStatus[] }) => (
     <>
         {history.map(item => (
-            <tr><td>{item.Status}</td><td dangerouslySetInnerHTML={{ __html: item.Details }} /><td>{item.Modified}</td></tr>
+            <tr><td>{item.Status}</td><td dangerouslySetInnerHTML={{ __html: item.Details }} /><td>{(new Date(item.Modified)).toDateString()}</td></tr>
         ))}
     </>
 );
