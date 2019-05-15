@@ -79,19 +79,19 @@ export default class NovMonthlyWp extends React.Component<INovMonthlyWpProps, {}
 
   private async siteScripts(): Promise<any> {
 
-    await sp.siteScripts.createSiteScript("Demo Site Script", "A demo site script", siteScriptContent);
+    await sp.siteScripts.createSiteScript("Demo Site Script 2", "A demo site script", siteScriptContent);
 
     return sp.siteScripts.getSiteScripts();
   }
 
   private async siteDesigns(): Promise<any> {
 
-    const siteScript = await sp.siteScripts.createSiteScript("Demo Site Script", "A demo site script", siteScriptContent);
+    const siteScript = await sp.siteScripts.createSiteScript("Demo Site Script 5", "A demo site script", siteScriptContent);
 
     // create a new design 
     const siteDesign = await sp.siteDesigns.createSiteDesign({
       SiteScriptIds: [siteScript.Id],
-      Title: "DemoSiteDesign",
+      Title: "DemoSiteDesign3",
       WebTemplate: "64",
     });
 

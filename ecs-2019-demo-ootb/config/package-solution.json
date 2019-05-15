@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "ootb-demo-client-side-solution",
+    "id": "414c35b1-84de-45e0-87ec-bcb3c49fe05e",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/ootb-demo.sppkg"
+  }
+}
