@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "73695d12-74fa-464a-a268-d9e4cbd0a786",
+  "alias": "NewPossumWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Other" },
+    "title": { "default": "NewPossum" },
+    "description": { "default": "Adds new possums to the list" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "NewPossum"
+    }
+  }]
+}
