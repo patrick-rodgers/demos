@@ -34,8 +34,8 @@ export default class NewPossum extends React.Component<INewPossumProps, INewPoss
   private saveUsingMsGraphClient(e: React.ChangeEvent<any>): void {
     e.preventDefault();
 
-    const siteId: string = "velingeorgiev.sharepoint.com,5950e1f2-47d5-4591-a912-6c123959e24f,7e5937b4-67ec-42e0-b68c-6a38bd194e62";
-    const listId: string = "1adc5086-4d57-4697-b097-bfa2b411da14";
+    const siteId: string = "officedevpnp.sharepoint.com,8a5649fd-3b86-4ed2-aa18-80382f78fb43,0e3dada5-cca3-41ef-93fb-93934d5a4f14";
+    const listId: string = "251eea98-9e5c-4bd3-b1ae-a863cca47c4c";
 
     this.props.msGraphClientFactory
       .getClient()
@@ -62,8 +62,8 @@ export default class NewPossum extends React.Component<INewPossumProps, INewPoss
   private saveUsingAadHttpClient(e: React.ChangeEvent<any>): void {
     e.preventDefault();
 
-    const siteId: string = "velingeorgiev.sharepoint.com,5950e1f2-47d5-4591-a912-6c123959e24f,7e5937b4-67ec-42e0-b68c-6a38bd194e62";
-    const listId: string = "1adc5086-4d57-4697-b097-bfa2b411da14";
+    const siteId: string = "officedevpnp.sharepoint.com,8a5649fd-3b86-4ed2-aa18-80382f78fb43,0e3dada5-cca3-41ef-93fb-93934d5a4f14";
+    const listId: string = "251eea98-9e5c-4bd3-b1ae-a863cca47c4c";
 
     const opts: IHttpClientOptions = {
       headers: {
@@ -102,8 +102,8 @@ export default class NewPossum extends React.Component<INewPossumProps, INewPoss
   private saveUsingPnPjs(e: React.ChangeEvent<any>): void {
     e.preventDefault();
 
-    const siteId: string = "velingeorgiev.sharepoint.com,5950e1f2-47d5-4591-a912-6c123959e24f,7e5937b4-67ec-42e0-b68c-6a38bd194e62";
-    const listId: string = "1adc5086-4d57-4697-b097-bfa2b411da14";
+    const siteId: string = "officedevpnp.sharepoint.com,8a5649fd-3b86-4ed2-aa18-80382f78fb43,0e3dada5-cca3-41ef-93fb-93934d5a4f14";
+    const listId: string = "251eea98-9e5c-4bd3-b1ae-a863cca47c4c";
 
     graph
     .sites.getById(siteId)
