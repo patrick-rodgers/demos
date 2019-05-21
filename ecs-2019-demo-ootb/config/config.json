@@ -9,10 +9,19 @@
           "manifest": "./src/webparts/possumDashboard/PossumDashboardWebPart.manifest.json"
         }
       ]
+    },
+    "balance-overview-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/balanceOverview/BalanceOverviewWebPart.js",
+          "manifest": "./src/webparts/balanceOverview/BalanceOverviewWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "PossumDashboardWebPartStrings": "lib/webparts/possumDashboard/loc/{locale}.js"
+    "PossumDashboardWebPartStrings": "lib/webparts/possumDashboard/loc/{locale}.js",
+    "BalanceOverviewWebPartStrings": "lib/webparts/balanceOverview/loc/{locale}.js"
   }
 }

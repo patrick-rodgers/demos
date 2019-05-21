@@ -1,5 +1,5 @@
-import { SPHttpClient } from "@microsoft/sp-http";
-import { IPossumListData, IPossumDetailData, IPossumStatus } from "./types";
+import { SPHttpClient, HttpClient, AadHttpClient } from "@microsoft/sp-http";
+import { IPossumListData, IPossumDetailData, IPossumStatus, IPossumBalance } from "./types";
 
 export function listClientBind(client: SPHttpClient): () => Promise<IPossumListData[]> {
 
@@ -73,4 +73,35 @@ export async function getPossumStatusList(client: SPHttpClient): Promise<IPossum
 
     console.error(await response.clone().text());
     throw Error(`Error retrieving the possum status list.`);
+}
+
+export function getPossumBalance(client: AadHttpClient): () => Promise<IPossumBalance[]> {
+    return async (): Promise<IPossumBalance[]> => {
+        const response = await client.get(`https://possumpete-api.azurewebsites.net/api/Finance`, AadHttpClient.configurations.v1);
+
+        if (response.ok) {
+            return await response.clone().json();
+        }
+
+        console.error(await response.clone().text());
+        throw Error(`Error retrieving the possum balance data`);
+    };
+}
+
+export function updatePossumBalance(client: AadHttpClient): (possum: string, newBalance: number) => Promise<IPossumBalance[]> {
+    return async (possum: string, newBalance: number) => {
+        const response = await client.post(`https://possumpete-api.azurewebsites.net/api/Finance`, AadHttpClient.configurations.v1, {
+            body: JSON.stringify({
+                name: possum,
+                balance: newBalance
+            })
+        });
+
+        if (response.ok) {
+            return await response.clone().json();
+        }
+
+        console.error(await response.clone().text());
+        throw Error(`Error retrieving the possum balance data`);
+    };
 }
