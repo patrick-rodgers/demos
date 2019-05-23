@@ -10,6 +10,10 @@
       {
         "resource": "possumpete-api",
         "scope": "user_impersonation"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Sites.ReadWrite.All"
       }
     ]
   },
