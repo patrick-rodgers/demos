@@ -19,3 +19,8 @@ export interface IPossumDetailData extends IPossumListData {
     FavoriteFood: string;
     StatusHistory: IPossumStatus[];
 }
+
+export interface IPossumBalance {
+    name: string;
+    balance: number;
+}
