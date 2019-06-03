@@ -9,10 +9,28 @@
           "manifest": "./src/webparts/possumDashboard/PossumDashboardWebPart.manifest.json"
         }
       ]
+    },
+  "balance-overview-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/balanceOverview/BalanceOverviewWebPart.js",
+          "manifest": "./src/webparts/balanceOverview/BalanceOverviewWebPart.manifest.json"
+        }
+      ]
+    },
+    "new-possum-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/newPossum/NewPossumWebPart.js",
+          "manifest": "./src/webparts/newPossum/NewPossumWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "PossumDashboardWebPartStrings": "lib/webparts/possumDashboard/loc/{locale}.js"
+    "PossumDashboardWebPartStrings": "lib/webparts/possumDashboard/loc/{locale}.js",
+    "BalanceOverviewWebPartStrings": "lib/webparts/balanceOverview/loc/{locale}.js",
+    "NewPossumWebPartStrings": "lib/webparts/newPossum/loc/{locale}.js"
   }
 }

@@ -5,7 +5,17 @@
     "id": "414c35b1-84de-45e0-87ec-bcb3c49fe05e",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
-    "isDomainIsolated": false
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+      {
+        "resource": "possumpete-api",
+        "scope": "user_impersonation"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Sites.ReadWrite.All"
+      }
+    ]
   },
   "paths": {
     "zippedPackage": "solution/ootb-demo.sppkg"

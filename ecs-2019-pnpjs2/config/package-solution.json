@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "ecs-2019-pnpjs-2-client-side-solution",
+    "id": "83dfed78-671c-4653-9b1f-d518b4a77249",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/ecs-2019-pnpjs-2.sppkg"
+  }
+}

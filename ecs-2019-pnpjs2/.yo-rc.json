@@ -1,10 +1,10 @@
 {
   "@microsoft/generator-sharepoint": {
-    "isCreatingSolution": false,
+    "isCreatingSolution": true,
     "environment": "spo",
     "version": "1.8.2",
-    "libraryName": "ootb-demo",
-    "libraryId": "414c35b1-84de-45e0-87ec-bcb3c49fe05e",
+    "libraryName": "ecs-2019-pnpjs-2",
+    "libraryId": "83dfed78-671c-4653-9b1f-d518b4a77249",
     "packageManager": "npm",
     "isDomainIsolated": false,
     "componentType": "webpart"
