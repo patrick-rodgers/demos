@@ -1,5 +1,11 @@
 import { SPHttpClient, HttpClient, AadHttpClient } from "@microsoft/sp-http";
 import { IPossumListData, IPossumDetailData, IPossumStatus, IPossumBalance } from "./types";
+import {
+    Environment,
+    EnvironmentType
+} from '@microsoft/sp-core-library';
+
+const shouldMock = Environment.type === EnvironmentType.Local;
 
 export function listClientBind(client: SPHttpClient): () => Promise<IPossumListData[]> {
 
@@ -24,6 +30,38 @@ export function listClientBind(client: SPHttpClient): () => Promise<IPossumListD
 export function detailClientBind(client: SPHttpClient): (id: number) => Promise<IPossumDetailData> {
 
     return async (id: number): Promise<IPossumDetailData> => {
+
+        if (shouldMock) {
+            return {
+                ID: 1,
+                Title: "Mock Possum 1",
+                Status: {
+                    ID: 1,
+                    Name: "Mock Possum 1",
+                    Details: "Some details",
+                    Modified: "2019-05-14T18:25:44Z",
+                    Status: "Healthy",
+                },
+                FavoriteFood: "Snacks",
+                ArrivalDate: "2019-05-14T18:25:44Z",
+                StatusHistory: [
+                    {
+                        ID: 1,
+                        Name: "Mock Possum 1",
+                        Details: "Some details",
+                        Modified: "2019-05-14T18:25:44Z",
+                        Status: "Healthy",
+                    },
+                    {
+                        ID: 2,
+                        Name: "Mock Possum 2",
+                        Details: "More details",
+                        Modified: "2019-05-14T18:24:44Z",
+                        Status: "Sick",
+                    },
+                ],
+            };
+        }
 
         const response = await client.get(`https://officedevpnp.sharepoint.com/sites/PossumPete/_api/web/lists/getByTitle('Possums')/items(${id})`, SPHttpClient.configurations.v1);
 
@@ -56,6 +94,25 @@ export function detailClientBind(client: SPHttpClient): (id: number) => Promise<
 }
 
 export async function getPossumStatusList(client: SPHttpClient): Promise<IPossumStatus[]> {
+
+    if (shouldMock) {
+        return [
+            {
+                ID: 1,
+                Name: "Mock Possum 1",
+                Details: "Some details",
+                Modified: "2019-05-14T18:25:44Z",
+                Status: "Healthy",
+            },
+            {
+                ID: 2,
+                Name: "Mock Possum 2",
+                Details: "More details",
+                Modified: "2019-05-14T18:24:44Z",
+                Status: "Sick",
+            }
+        ];
+    }
 
     // now we need to get the status for each possum which we do like so:
     const response = await client.get(`https://officedevpnp.sharepoint.com/sites/PossumPete/_api/web/lists/getByTitle('PossumStatus')/items?$select=Status,Details,Modified,Possum/ID,Possum/Title&$expand=Possum&$orderby=Created desc`, SPHttpClient.configurations.v1);
