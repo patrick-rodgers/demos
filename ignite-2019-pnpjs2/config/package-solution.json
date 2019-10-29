@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "ignite-2019-pnpjs-2-client-side-solution",
+    "id": "563967a1-24e1-4035-842b-523d23c05d8f",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/ignite-2019-pnpjs-2.sppkg"
+  }
+}
