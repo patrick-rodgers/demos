@@ -11,7 +11,7 @@ import * as strings from 'HelloWorldWebPartStrings';
 
 // DEMO: Added: Selective Imports
 import { sp } from "@pnp/sp";
-// DEMO: NOTE: simply paths inside libraries
+// DEMO: NOTE: simple paths inside libraries
 import "@pnp/sp/webs";
 import "@pnp/sp/lists/web";
 
