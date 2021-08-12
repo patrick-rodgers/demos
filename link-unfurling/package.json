@@ -1,0 +1,21 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "type": "module",
+  "dependencies": {
+    "@azure/msal-node": "^1.3.0",
+    "@pnp/common": "^2.7.0",
+    "@types/node-fetch": "^2.5.12",
+    "node-fetch": "^2.6.1",
+    "typescript": "^4.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc main.ts && node main.js"
+  },
+  "author": "",
+  "license": "MIT"
+}

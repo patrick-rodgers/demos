@@ -1,0 +1,10 @@
+settings.ts
+settings.js
+
+/dist/
+
+/node_modules/
+
+*.js
+
+
