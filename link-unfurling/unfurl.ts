@@ -1,6 +1,7 @@
 import { encodeSharingUrl } from "./utils.js";
 import { spFetch } from "./fetch.js";
 import { combine, isArray } from "@pnp/common";
+import { UnfurledLinkInfo } from "./types";
 
 const errSink = () => void (0);
 
@@ -103,7 +104,7 @@ export async function unfurl(url: string): Promise<UnfurledLinkInfo> {
 function isSitePage(data: { contentType?: { name: string, id: string } }): boolean {
 
     // here we are checking the content type data to see if we have a site page
-    return data.contentType && (data.contentType.name === "SitePage" || data.contentType.id.startsWith("0x0101009D1CB255DA76424F860D91F20E6C4118");
+    return data.contentType && (data.contentType.name === "SitePage" || data.contentType.id.startsWith("0x0101009D1CB255DA76424F860D91F20E6C4118"));
 }
 
 
@@ -131,24 +132,4 @@ async function processThumbnailQuery(url: string): Promise<string> {
     return thumbnailUrl;
 }
 
-/**
- * Represents the information found to unfurl a url
- */
-export interface UnfurledLinkInfo {
-    /**
-     * The url to a thumbnail as best we were able to determine
-     */
-    thumbnailUrl: string | null;
-    /**
-     * Any title we are able to find
-     */
-    title: string;
-    /**
-     * Any description we were able to find
-     */
-    description: string;
-    /**
-     * Original url provided to unfurl
-     */
-    url: string;
-}
+
