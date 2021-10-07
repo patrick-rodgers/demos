@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "iframe-sample-client-side-solution",
+    "id": "4c24dce2-8efa-40ad-928d-2938c85c7a46",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.13.0-beta.22"
+    }
+  },
+  "paths": {
+    "zippedPackage": "solution/iframe-sample.sppkg"
+  }
+}
