@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "shared-state-ace-client-side-solution",
+    "id": "9d11fe61-620d-4027-a7d7-eda97b828b09",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "shared-state-ace description"
+      },
+      "longDescription": {
+        "default": "shared-state-ace description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "shared-state-ace Feature",
+        "description": "The feature that activates elements of the shared-state-ace solution.",
+        "id": "e4b6c53d-0e00-443f-915b-394e5c63665e",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/shared-state-ace.sppkg"
+  }
+}
